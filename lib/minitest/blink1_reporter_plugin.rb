@@ -37,7 +37,7 @@ module Minitest
     end
   end
 
-  def self.plugin_blink1_init(options)
+  def self.plugin_blink1_reporter_init(options)
     reporter << Blink1Reporter.new(options)
   end
 end
