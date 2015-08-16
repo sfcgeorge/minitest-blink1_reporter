@@ -9,18 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Simon George"]
   spec.email         = ["simon@sfcgeorge.co.uk"]
 
-  spec.summary       = %q{Display test results with a Blink(1)}
+  spec.summary       = %q{Display minitest results with a Blink(1)}
   spec.description   = %q{Lights up your Blink(1) red / orange / green when tests pass / skip / fail, and purple while running. It makes testing fun!}
   spec.homepage      = "https://github.com/sfcgeorge/minitest-blink1_reporter"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
